@@ -13,8 +13,21 @@
 		<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQATumxnxCaGgp6sMydlco3dKsq8zPr_p4deWSgFQJ6RA&s">
 		<p>Here you can sell notcoin, the beautiful design will not let you leave)</p>
 		<button id="sell">SELL</button>
-		<button id="exchange">EXCHANGE</button>
 	</div>
+	<form id="sells">
+		<p>You sell NOTCOIN, Choose where to withdraw?</p>
+		<select id="sliderType" onchange="changeType()">
+			<option value="PayPal">PayPal</option>
+
+
+		</select>
+	</form>
 	<script type="https://telegram.org/js/telegram-web-app.js"></script>
+	<script>
+		sell.addEventListner(click, () => {
+			document.getElementById("main").style.display = "none";
+			document.getElementById("sells").style.display = "block";
+		}
+	</script>
 </body>
 </html>
